@@ -7,7 +7,7 @@ import {getAllJobs} from "../../store";
 
 
 const JobsList = () => {
-    const {jobsArr} = useSelector(store => store.jobs);
+    const {jobsArr, error} = useSelector(store => store.jobs);
     const dispatch = useDispatch();
 
     useEffect(() => {
@@ -17,6 +17,8 @@ const JobsList = () => {
 
     return (
         <div className={"jobsList"}>
+            {error && <h1>{error.message()}</h1>}
+
             {jobsArr && jobsArr.map(value => <Job key={value.id} job={value}/>)}
         </div>
     );

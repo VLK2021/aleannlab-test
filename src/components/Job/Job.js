@@ -1,8 +1,9 @@
 import React from 'react';
-
-import './JobStyle.css';
 import {ImLocation2} from "react-icons/im";
 import {NavLink} from "react-router-dom";
+
+import './JobStyle.css';
+import imageMenu from '../../images/Rectangle.png';
 
 
 const Job = ({job}) => {
@@ -42,11 +43,13 @@ const Job = ({job}) => {
 
                 <div className={"job-information-location"}><ImLocation2/> lat: {location.lat} long: {location.long}
                 </div>
-
             </div>
 
 
-            <div className={"job-rating"}></div>
+            <div className={"job-time"}>
+                <div className={"job-time-menu"}><img src={imageMenu} alt="icon"/></div>
+                <div className={"job-time-day"}>{createdAt.toString()}</div>
+            </div>
         </div>
     );
 };
