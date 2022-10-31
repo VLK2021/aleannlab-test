@@ -1,0 +1,13 @@
+.layout {
+    width: 100%;
+    min-height: 100vh;
+    background: var(--var-bg-leyout);
+}
+
+.outlet {
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem 10rem 0.5rem 10rem;
+    box-sizing: border-box;
+    background: var(--var-bg-leyout);
+}
