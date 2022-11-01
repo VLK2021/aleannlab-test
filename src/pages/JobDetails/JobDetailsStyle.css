@@ -1,0 +1,211 @@
+.jobDetails {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--var-bg-job);
+    padding: 0.5rem;
+    box-sizing: border-box;
+    box-shadow: 2px 1px 7px rgba(0, 0, 0, 0.5), 0 2px 1px -1px rgba(0, 0, 0, 0.5), 0 1px 3px rgba(0, 0, 0, 0.5);
+
+}
+
+.jobDetails-content {
+    width: 80%;
+}
+
+.jobDetails-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.jobDetails-header-header {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--var-color-title);
+}
+
+.jobDetails-header-menu {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.jobDetails-header-menu-block1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.jobDetails-header-menu-block1-img > img {
+    width: 0.6rem;
+}
+
+.obDetails-header-menu-block1 > p {
+    font-size: 0.1rem;
+    color: var(--var-color-title);
+}
+
+.margin {
+    margin-right: 1rem;
+}
+
+.jobDetails-button-app {
+    margin-top: 1.5rem;
+}
+
+.button {
+    width: 11rem;
+    height: 4rem;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    background: var(--var-color-title);
+    border-radius: 0.8rem;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+
+/*--------jobDetails-price-----------------------*/
+.jobDetails-price {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.8rem;
+}
+
+.jobDetails-price-inf {
+    width: 70%;
+    color: var(--var-color-title);
+    font-size: 1.7rem;
+    text-align: start;
+}
+
+.jobDetails-price-price {
+    width: 30%;
+    text-align: end;
+}
+
+.jobDetails-price-price-salary {
+    font-weight: bold;
+    color: var(--var-color-title);
+    font-size: 1.4rem;
+}
+
+.jobDetails-price-price-text {
+    color: var(--var-color-title);
+    font-size: 1rem;
+    line-height: 24px;
+    margin: 0;
+    padding: 0;
+}
+
+/*-------------jobDetails-posted-------------------------------------------------*/
+.jobDetails-posted {
+    text-align: start;
+    color: var(--var-colot-text-posted);
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+/*-----------jobDetails-text------------------------------------------------------*/
+.jobDetails-text {
+    text-align: start;
+    color: var(--var-color-title);
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 24px;
+}
+
+/*-----------jobDetails-ul-----------------------------------------------*/
+.jobDetails-ul {
+    text-align: start;
+    color: var(--var-color-title);
+}
+
+ul {
+    list-style: square;
+}
+
+/*-------------------------------------------------------------------*/
+h2 {
+    text-align: start;
+    margin-top: 4rem;
+}
+
+/*---jobDetails-block-buttons1------------------------------------------------------------------------*/
+.jobDetails-block-buttons1 {
+    text-align: start;
+}
+
+.buttons-block-three {
+    width: 15rem;
+    height: 3.5rem;
+    background: var(--var-bg-buttons-three);
+    color: var(--var-c-buttons-three);
+    border-radius: 0.8rem;
+    border: 1px solid rgba(85, 105, 158, 0.3);
+    margin-right: 1rem;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+/*------jobDetails-block-buttons2-----------------------------------------------------------------------*/
+.jobDetails-block-buttons2 {
+    text-align: start;
+}
+
+.buttons-block-two {
+    width: 15rem;
+    height: 3.5rem;
+    background: var(--var-bg-buttons-two);
+    color: var(--var-c-buttons-two);
+    border-radius: 0.8rem;
+    border: 1px solid #FFCF00;
+    margin-right: 1rem;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+/*---------jobDetails-images---------------------------------------------------------*/
+.jobDetails-images {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.jobDetails-images-img > img {
+    width: 17rem;
+    height: 9rem;
+    margin-right: 1rem;
+    border-radius: 0.8rem;
+}
+
+/*-----go-back--------------------------------------*/
+.go-back {
+    width: 12rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3rem 0 1.5rem 0;
+    color: var(--var-color-title);
+}
+
+.go-back > p {
+    margin: 0 0 0 0.5rem;
+    padding: 0;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+/*-------------------------------------------------------------------------*/
+.jobDetails-map {
+    width: 20%;
+}
