@@ -1,18 +1,19 @@
 import React from 'react';
 import {NavLink, useParams} from "react-router-dom";
 import {useSelector} from "react-redux";
+import {ImLocation2} from "react-icons/im";
 
 import './JobDetailsStyle.css';
 import rectangle from '../../images/Rectangle.png';
 import share from '../../images/Share.png';
 import arrow from '../../images/Arrow.png';
+import map from '../../images/Map.png';
 
 
 const JobDetails = () => {
     const {jobsArr} = useSelector(store => store.jobs);
     const {id} = useParams();
     const jobDetails = jobsArr.filter(val => val.id === id);
-    console.log(jobDetails);
 
     const {
         address,
@@ -143,7 +144,25 @@ const JobDetails = () => {
                 </NavLink>
             </div>
 
-            <div className={"jobDetails-map"}>map</div>
+            <div className={"jobDetails-map"}>
+                <div className={"jobDetails-map-inf"}>
+                    <p>Department name:</p>
+                    <p>{name}</p>
+
+                    <div className={"jobDetails-map-inf-address"}>
+                        <div className={"icon"}><ImLocation2/></div>
+                        <p>{address}</p>
+                    </div>
+
+                    <p className={"color"}>{employment_type[0]}</p>
+                    <p className={"color"}>{phone}</p>
+                    <p className={"color"}>{email}</p>
+                </div>
+
+                <div className={"jobDetails-map-pictures"}>
+                    <img src={map} alt="map"/>
+                </div>
+            </div>
         </div>
     );
 };

@@ -11,7 +11,7 @@
 }
 
 .jobDetails-content {
-    width: 80%;
+    width: 75%;
 }
 
 .jobDetails-header {
@@ -205,7 +205,52 @@ h2 {
     font-weight: bold;
 }
 
-/*-------------------------------------------------------------------------*/
+/*-------jobDetails-map-----------jobDetails-map-------------------------------------------------------*/
 .jobDetails-map {
-    width: 20%;
+    width: 25%;
+    padding: 2rem 0.2rem 0 0.9rem;
+    box-sizing: border-box;
+    margin-bottom: 80rem;
+}
+
+.jobDetails-map-inf {
+    text-align: start;
+    width: 100%;
+    background: var(--var-bg-block-inf);
+    padding: 1rem;
+    box-sizing: border-box;
+    border-radius: 0.8rem 0.8rem 0 0;
+    color: #FFFFFF;
+}
+
+.jobDetails-map-inf-address {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    margin-top: 0.3rem;
+    color: var(--var-c-text-map);
+}
+
+.jobDetails-map-inf-address > p {
+    font-size: 0.85rem;
+}
+
+.color {
+    color: var(--var-c-text-map);
+}
+
+.icon {
+    margin-right: 0.2rem;
+}
+
+
+/*------------------obDetails-map-pictures------------------------------*/
+.jobDetails-map-pictures {
+    width: 100%;
+}
+
+.jobDetails-map-pictures > img {
+    width: 100%;
+    height: 9rem;
+    border-radius: 0 0 0.8rem 0.8rem;
 }

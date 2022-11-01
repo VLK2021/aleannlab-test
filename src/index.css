@@ -8,6 +8,11 @@ body {
     font-style: normal;
 }
 
+p{
+    margin: 0;
+    padding: 0;
+}
+
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -23,4 +28,6 @@ code {
     --var-c-buttons-three:#55699E;
     --var-bg-buttons-two:rgba(255, 207, 0, 0.15);
     --var-c-buttons-two:#988B49;
+    --var-bg-block-inf:#2A3047;
+    --var-c-text-map:#E8EBF3;
 }
