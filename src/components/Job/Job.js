@@ -9,19 +9,12 @@ import imageMenu from '../../images/Rectangle.png';
 const Job = ({job}) => {
     const {
         address,
-        benefits,
         createdAt,
-        description,
-        email,
-        employment_type,
         id,
         location,
         name,
-        phone,
         pictures,
-        salary,
         title,
-        updatedAt
     } = job;
 
     return (
@@ -29,7 +22,6 @@ const Job = ({job}) => {
             <div className={"job-img"}>
                 <img src={pictures[0]} alt="pictures"/>
             </div>
-
 
             <div className={"job-information"}>
                 <NavLink to={id.toString()}>
@@ -44,7 +36,6 @@ const Job = ({job}) => {
                 <div className={"job-information-location"}><ImLocation2/> lat: {location.lat} long: {location.long}
                 </div>
             </div>
-
 
             <div className={"job-time"}>
                 <div className={"job-time-menu"}><img src={imageMenu} alt="icon"/></div>

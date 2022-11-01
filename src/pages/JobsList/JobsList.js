@@ -4,6 +4,7 @@ import {useDispatch, useSelector} from "react-redux";
 import './JobsListStyle.css';
 import Job from "../../components/Job/Job";
 import {getAllJobs} from "../../store";
+import Pagination from "../../components/Pagination/Pagination";
 
 
 const JobsList = () => {
@@ -20,6 +21,8 @@ const JobsList = () => {
             {error && <h1>{error.message()}</h1>}
 
             {jobsArr && jobsArr.map(value => <Job key={value.id} job={value}/>)}
+
+            <Pagination/>
         </div>
     );
 };
