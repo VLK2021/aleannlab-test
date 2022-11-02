@@ -1,6 +1,9 @@
 {
   "name": "aleannlab-test",
   "version": "0.1.0",
+  "engines": {
+    "node": "16.17.1"
+  },
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.6",
