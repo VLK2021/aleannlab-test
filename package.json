@@ -1,6 +1,10 @@
 {
+  "homepage": "https://VLK2021.github.io/aleannlab-test",
   "name": "aleannlab-test",
   "version": "0.1.0",
+  "engines": {
+    "node": "6.11.1"
+  },
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.6",
@@ -18,6 +22,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
